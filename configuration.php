@@ -28,12 +28,12 @@ $testClientSecret = getenv('TEST_CLIENT_SECRET');
 $provider = new \AdamPaterson\OAuth2\Client\Provider\Stripe([
     'clientId' => $clientId,
     'clientSecret' => $clientSecret,
-    'redirectUri' => 'https://www.wpmerchant.com/stripe-connect-new/complete/',
+    'redirectUri' => 'https://www.wpmerchant.com/stripe-connect-demo/complete/',
         ]);
 
 // Create test OAuth provider
 $test_provider = new \AdamPaterson\OAuth2\Client\Provider\Stripe([
     'clientId' => $testClientId,
     'clientSecret' => $testClientSecret,
-    'redirectUri' => 'https://www.wpmerchant.com/stripe-connect-new/complete/',
+    'redirectUri' => 'https://www.wpmerchant.com/stripe-connect-demo/complete/',
         ]);
